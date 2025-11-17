@@ -29,6 +29,14 @@
             Console.WriteLine($"NWD podanych czasów wynosi: {wynik}");
         }
 
+        //**************************
+        //nazwa funkcji: NWD
+        //opis funkcji: bierze największy wspólny dzielnik z dwóch wartości
+        //parametry: a - pierwsza liczba całkowita
+        //           b - druga liczba całkowita
+        //zwracany typ i opis: int - największy wspólny dzielnik dwóch liczb
+        //autor: Paweł
+        //**************************
         static int NWD(int a, int b)
         {
             while(a != b)
