@@ -11,7 +11,13 @@
             for (int i = 0; i < 4; i++)
             {
                 Console.Write($"Podaj czas użytkownika {i+1}: ");
-                int czas = Convert.ToInt32(Console.ReadLine());
+                string odp = Console.ReadLine();
+                if(!odp.All(char.IsNumber))
+                {
+                    Console.WriteLine("Podana wartość nie jest liczbą całkowitą!");
+                    break;
+                }
+                int czas = Convert.ToInt32(odp);
                 tablica[i] = czas;
             }
 
